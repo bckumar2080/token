@@ -1,0 +1,59 @@
+{
+    "name": "token",
+    "type": "flogo:activity",
+    "ref": "github.com/bckumar2080/token",
+    "version": "1.0.0",
+    "title": "Access Token",
+    "description": "Get a Access Token",
+    "author": "Charish",
+    "homepage": "https://github.com/bckumar2080/token",
+    "inputs": [
+        {
+            "name": "username",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "password",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "scope",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "basicauth",
+            "type": "string",
+            "required": true
+        },
+		{
+            "name": "accessURL",
+            "type": "string",
+            "required": true
+        }
+	],
+    "outputs": [
+        {
+            "name": "accesstoken",
+            "type": "string"
+        },
+        {
+            "name": "tokentype",
+            "type": "string"
+        },
+        {
+            "name": "expiresin",
+            "type": "string"
+        },
+        {
+            "name": "refreshtoken",
+            "type": "string"
+        },
+        {
+            "name": "scope",
+            "type": "string"
+        }
+    ]
+}
