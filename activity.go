@@ -19,7 +19,7 @@ const (
 	ivPassword     = "password"
 	ivScope        = "scope"
 	ivBasicAuth    = "basicauth"
-	ivUrl            = "accessURL"
+	ivUrl          = "accessURL"
 	ovToken        = "accesstoken"
 	ovTokenType    = "tokentype"
 	ovExpires      = "expiresin"
