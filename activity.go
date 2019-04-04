@@ -19,7 +19,7 @@ const (
 	ivPassword     = "password"
 	ivScope        = "scope"
 	ivBasicAuth    = "basicauth"
-	url            = "accessURL"
+	ivUrl            = "accessURL"
 	ovToken        = "accesstoken"
 	ovTokenType    = "tokentype"
 	ovExpires      = "expiresin"
@@ -52,6 +52,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 	username := context.GetInput(ivUsername).(string)
 	password := context.GetInput(ivPassword).(string)
 	scope := context.GetInput(ivScope).(string)
+	url := context.GetInput(ivUrl).(string)
     auth := context.GetInput(ivBasicAuth).(string)
 	encodedAuth := b64.StdEncoding.EncodeToString([]byte(auth))
 
