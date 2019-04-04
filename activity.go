@@ -28,7 +28,7 @@ const (
 )
 
 // log is the default package logger
-var log = logger.GetLogger("activity-accesstoken")
+var log = logger.GetLogger("activity-token")
 
 // MyActivity is a stub for your Activity implementation
 type MyActivity struct {
