@@ -57,6 +57,6 @@ func TestEvalGzip(t *testing.T) {
 	act.Eval(tc)
 
 	//check result attr
-	result := tc.GetOutput("token")
+	result := tc.GetOutput("accesstoken")
 	fmt.Printf("[%s]", result)
 }
